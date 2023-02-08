@@ -14,10 +14,7 @@ use App\Http\Controllers\ListingsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/listings', [ListingsController::class, 'index'])->name('index.listings');
+Route::get('/', [ListingsController::class, 'index'])->name('index.listings');
 
 Route::get('/listings/{id}', [ListingsController::class, 'show'])->name('show.listing');

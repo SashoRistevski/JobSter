@@ -14,10 +14,8 @@ class ListingsController extends Controller
      */
     public function index()
     {
-
         $data = ['listings' => Listing::all()];
         return view('listings.index')->with($data);
-
     }
 
     /**
@@ -52,7 +50,6 @@ class ListingsController extends Controller
         $data = ['listing' => Listing::find($id)];
 
         return view('listings.show')->with($data);
-
     }
 
     /**

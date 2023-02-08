@@ -8,7 +8,7 @@ module.exports = {
     theme: {
         extend: {
             colors : {
-                laravel: "#ef3b2d"
+                laravel: "#416084"
             }
         },
     },
