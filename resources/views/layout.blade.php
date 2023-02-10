@@ -21,7 +21,7 @@
 <body class="container mx-auto mb-48">
 <nav class="flex justify-between items-center mb-5 mt-2">
 
-    <a href="/listings">
+    <a href="/">
         <img class="w-24 h-22" src="{{asset('images/logo-no-background.png')}}" alt=""
         /></a>
     <ul class="flex space-x-6 mr-6 text-lg">

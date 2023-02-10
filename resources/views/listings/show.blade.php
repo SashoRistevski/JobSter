@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <a href="{{route('index.listings')}}" class="inline-block text-black ml-4 mb-4"
+    <a href="{{route('listings.index')}}" class="inline-block text-black ml-4 mb-4"
     ><i class="fa-solid fa-arrow-left"></i>
     </a>
     <div class="container mx-auto" >
@@ -34,10 +34,6 @@
                         <p>
                             {{$listing->description}}
                         </p>
-                        <p>
-                            {{$listing->description}}
-                        </p>
-
                         <a href="mailto:{{$listing->email}}"
                             class="block bg-laravel text-white mt-6 py-2 rounded-xl hover:opacity-80"
                         ><i class="fa-solid fa-envelope"></i>

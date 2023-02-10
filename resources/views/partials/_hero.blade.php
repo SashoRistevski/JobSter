@@ -4,8 +4,7 @@
          style="background-image: url('images/png/logo-no-background.png')"></div>
 
         <div class="z-10">
-        <h1 class="text-5xl font-bold uppercase text-white">
-            JobSteer<span class="text-black">Board</span>
+        <h1 class="text-4xl font-bold uppercase text-white">JobSteer<span class="text-black">Board</span>
         </h1>
         <p class="text-2xl text-gray-200 font-bold my-4">
             Find or post jobs & projects
