@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListingsController;
+use App\Models\Listing;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +15,14 @@ use App\Http\Controllers\ListingsController;
 |
 */
 
-
-Route::get('/',[ListingsController::class, 'index'])->name('listings.index');
+Route::get('/', [ListingsController::class, 'index'])->name('listings.index');
 Route::get('/listings/create', [ListingsController::class, 'create'])->name('listings.create');
-Route::get('/listings/{id}', [ListingsController::class, 'show'])->name('listings.show');
-Route::post('/listings/', [ListingsController::class, 'store'])->name('listings.store');
+Route::get('/listings/{listing}', [ListingsController::class, 'show'])->name('listings.show');
+Route::get('/listings/{listing}/edit', [ListingsController::class, 'edit'])->name('listings.edit');
+Route::put('/listings/{listing}', [ListingsController::class, 'update'])->name('listings.update');
+Route::post('/', [ListingsController::class, 'store'])->name('listings.store');
+
+
+
 
 
